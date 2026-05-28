@@ -118,12 +118,13 @@
     margin-top: 2px;
   }
   .header__cta {
-    background: var(--accent-green-deep);
+    background: #06C755;
     color: white;
     padding: 8px 16px;
     border-radius: 999px;
     font-size: 12px;
     letter-spacing: 0.05em;
+    box-shadow: 0 2px 8px rgba(6, 199, 85, 0.3);
   }
 
   /* ==========================================================================
@@ -244,11 +245,56 @@
     border-bottom: 1px solid rgba(143, 166, 142, 0.4);
     padding-bottom: 1px;
   }
+  .hero__social-proof {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 8px 14px;
+    border-radius: 999px;
+    margin-bottom: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 8px rgba(74, 93, 79, 0.06);
+  }
+  .hero__stars {
+    color: #E8B73A;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 1;
+  }
+  .hero__social-text {
+    font-size: 11px;
+    color: var(--text-sub);
+    letter-spacing: 0.05em;
+    font-weight: 500;
+  }
   .hero__cta {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
+  }
+  .btn--line {
+    background: #06C755;
+    color: white;
+    box-shadow: 0 6px 18px rgba(6, 199, 85, 0.3);
+  }
+  .btn--line:hover {
+    background: #05B84E;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(6, 199, 85, 0.4);
+  }
+  .btn__line-icon {
+    margin-right: 6px;
+    font-size: 16px;
+  }
+  .hero__urgency {
+    font-size: 11px;
+    color: var(--accent-green-deep);
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin-top: 6px;
+    font-weight: 500;
   }
 
   /* CTA Buttons */
@@ -1035,6 +1081,13 @@
     background: white;
     color: var(--accent-green-deep);
   }
+  .cta-final .btn--primary.btn--line {
+    background: #06C755;
+    color: white;
+  }
+  .cta-final .btn--primary.btn--line:hover {
+    background: #05B84E;
+  }
   .cta-final .btn--secondary {
     border-color: rgba(255, 255, 255, 0.6);
     color: white;
@@ -1305,7 +1358,7 @@ document.addEventListener('DOMContentLoaded', function() {
       KENKO.lab
       <small>WOMEN'S WELLNESS STUDIO</small>
     </a>
-    <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="header__cta">無料体験予約</a>
+    <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="header__cta">LINEで無料体験</a>
   </div>
 </header>
 
@@ -1330,18 +1383,25 @@ document.addEventListener('DOMContentLoaded', function() {
         <span class="hero__badge hero__badge--free">90分無料体験 <strong>受付中</strong></span>
         <span class="hero__badge">1回 <strong>¥5,780〜</strong></span>
         <span class="hero__badge hero__badge--science">体の状態を<strong>科学的に測定</strong></span>
-        <span class="hero__badge">駐車場 6台あり</span>
       </div>
+
+      <div class="hero__social-proof">
+        <span class="hero__stars">★★★★★</span>
+        <span class="hero__social-text">Googleレビュー 高評価多数</span>
+      </div>
+
       <div class="hero__cta">
-        <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="btn btn--primary">
-          初回体験を無料で予約する
+        <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="btn btn--primary btn--line">
+          <span class="btn__line-icon">💬</span>
+          LINEで30秒・無料体験を申し込む
           <span class="btn__arrow">→</span>
         </a>
-        <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="btn btn--secondary">
-          まずはLINEで相談する
+        <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="btn btn--secondary">
+          予約サイトから直接予約する
         </a>
       </div>
-      <p class="hero__note">会員登録 → 無料チケット受領 → 予約 の3ステップで完了。無理な勧誘は一切ありません。</p>
+      <p class="hero__note">⏱ 1分で完了・キャンセル料なし・無理な勧誘なし</p>
+      <p class="hero__urgency">🌿 完全予約制・完全マンツーマン ／ 他のお客様と一緒になることはありません</p>
     </div>
     <div class="hero__photo" role="img" aria-label="KENKO.labでピラティスを行う女性"></div>
   </div>
@@ -1787,12 +1847,13 @@ document.addEventListener('DOMContentLoaded', function() {
       気になる違和感がある方は、まずは一度ご相談ください。
     </p>
     <div class="cta-final__buttons">
-      <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="btn btn--primary">
-        初回体験を無料で予約する
+      <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="btn btn--primary btn--line">
+        <span class="btn__line-icon">💬</span>
+        LINEで30秒・無料体験を申し込む
         <span class="btn__arrow">→</span>
       </a>
-      <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="btn btn--secondary">
-        LINEで相談する
+      <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="btn btn--secondary">
+        予約サイトから直接予約する
       </a>
     </div>
   </div>
@@ -1833,8 +1894,8 @@ document.addEventListener('DOMContentLoaded', function() {
      Floating CTA (mobile only)
      ========================================================================== -->
 <div class="floating-cta">
-  <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="btn btn--primary">無料体験を予約</a>
-  <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="btn btn--secondary">LINE相談</a>
+  <a href="https://lin.ee/Q0Q4YPq" target="_blank" rel="noopener" class="btn btn--primary btn--line">💬 LINEで無料体験</a>
+  <a href="https://kenko-lab.azzist.jp" target="_blank" rel="noopener" class="btn btn--secondary">予約サイト</a>
 </div>
 
 </body>
